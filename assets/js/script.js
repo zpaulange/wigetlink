@@ -4,7 +4,7 @@ function fetchData() {
     const boxTag = document.querySelector("#content")
     if(boxTag){
         boxTag.innerHTML = `
-            <img src="/assets/images/loader.svg" alt="loader" style="width:70px" />
+            <img src="./assets/images/loader.svg" alt="loader" style="width:70px" />
         `
         axios.post('https://test-site.rechcompt.com/api/v1/merchants/test-widget', {}, {
             headers: {
@@ -86,7 +86,6 @@ function fetchData() {
                                         webhook: "https://rechcompt.com"
                                     })
 
-
                                     elem.innerHTML = `en cours...`
                                     setTimeout(()=>{
                                         if(action==="-"){
@@ -99,7 +98,6 @@ function fetchData() {
                                                 <img src="./assets/images/PlusOutlined.svg" alt="+">
                                                 <span>Dépôt</span>
                                             `
-        
                                         }
                                     },3000)
                                 }

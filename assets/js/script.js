@@ -82,7 +82,8 @@ function fetchData() {
                                         transactionKey: "186339491a3fc16e",
                                         transactionPassword: "03206b53ebf67688",
                                         action: action,
-                                        webhook: "https://rechcompt.com"
+                                        webhook: "https://rechcompt.com",
+                                        ptner_transaction_id: "123456789",
                                     })
 
                                     elem.innerHTML = `en cours...`

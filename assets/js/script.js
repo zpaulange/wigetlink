@@ -77,6 +77,7 @@ function fetchData() {
                             if(elem.tagName==="BUTTON"){
                                 const action = e.target.getAttribute('data-action')
                                 if(action){
+                                    console.log("action>>",action)
                                     RcTransaction({
                                         transactionKey: "186339491a3fc16e",
                                         transactionPassword: "03206b53ebf67688",

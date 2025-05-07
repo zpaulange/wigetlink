@@ -1,5 +1,3 @@
-
-
 function fetchData() {
     const boxTag = document.querySelector("#content")
     if(boxTag){
@@ -8,9 +6,9 @@ function fetchData() {
         `
         axios.post('https://test-site.rechcompt.com/api/v1/merchants/test-widget', {}, {
             headers: {
-                "x-transaction-key":"a25b3f15ba2c53c2",
-                "x-transaction-password":"a25b3f15ba2c53c2",
-                "x-user-key":"4d4f11e68ca248fb"
+                "x-transaction-key":"186339491a3fc16e",
+                "x-transaction-password":"03206b53ebf67688",
+                "x-user-key":"409db2794eff1d8c" 
             }
         })
         .then(response => {
@@ -80,8 +78,8 @@ function fetchData() {
                                 const action = e.target.getAttribute('data-action')
                                 if(action){
                                     RcTransaction({
-                                        transactionKey: "cdd9a8d7720c70de",
-                                        transactionPassword: "2b8224112a4449b8",
+                                        transactionKey: "186339491a3fc16e",
+                                        transactionPassword: "03206b53ebf67688",
                                         action: action,
                                         webhook: "https://rechcompt.com"
                                     })

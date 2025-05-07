@@ -4,7 +4,7 @@ function fetchData() {
         boxTag.innerHTML = `
             <img src="./assets/images/loader.svg" alt="loader" style="width:70px" />
         `
-        axios.post('https://test-site.rechcompt.com/api/v1/merchants/test-widget', {}, {
+        axios.post('https://test.rechcompt.com/api/v1/merchants/test-widget', {}, {
             headers: {
                 "x-transaction-key":"186339491a3fc16e",
                 "x-transaction-password":"03206b53ebf67688",

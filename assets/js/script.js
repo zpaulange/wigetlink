@@ -78,12 +78,16 @@ function fetchData() {
                                 const action = e.target.getAttribute('data-action')
                                 if(action){
                                     console.log("action>>",action)
+                                    // generate random transaction id
+                                    const randomId = Math.floor(Math.random() * 1000000000);
+
+                                    // RcTransaction
                                     RcTransaction({
                                         transactionKey: "186339491a3fc16e",
                                         transactionPassword: "03206b53ebf67688",
                                         action: action,
                                         webhook: "https://rechcompt.com",
-                                        ptner_transaction_id: "123456789",
+                                        ptner_transaction_id: randomId,
                                     })
 
                                     elem.innerHTML = `en cours...`
